@@ -1,0 +1,352 @@
+/* FORMATAÇÃO GERAL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+body, h1, form {
+    padding: 0px;
+    margin: 0px;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* FORMATAÇÃO CLASSES*/
+
+.main-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-div {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    box-shadow: 0 0 0.8em black;
+    border-radius: 10px;
+}
+
+.div-left {
+    background-image: url('../img/iphone.png');
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #013243;
+    align-items: center;
+    height: 595px;
+    width: 479px;
+    margin: auto 0;
+}
+
+
+.div-left:hover {
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1s;
+        background-color: #016080; 
+}
+
+
+.text-left {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-left h1 {
+    font-size: 2.3rem;
+    letter-spacing: 1.5px;
+    color: whitesmoke;
+    padding: 53px 0 19px 0;
+}
+
+.text-left span {
+    letter-spacing: 1.5px ;
+    font-family: Roboto, sans-serif;
+    font-weight: lighter;
+    color: #86C0D4;
+}
+
+.div-right {
+    border: 1px solid #DBDAD9;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #FFFF;
+    align-items: center;
+    height: 593px;
+    width: 450px;
+    justify-content: center;
+}
+
+.div-right form {
+    width: 320px;
+    padding-left: 70px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+label {
+    padding: 0 0 0 3px;
+}
+
+form h1 {
+    font-size: 2.3rem;
+    letter-spacing: 1.5px;
+    color: black;
+    padding: 53px 0 19px 0;
+}
+
+.email {
+    margin: 10px 0;
+    padding: 20px 90px 20px 10px;
+    border-radius: 10px;
+    border: 1px solid #DBDAD9;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+.email::placeholder{
+    color:
+}
+
+.password {
+    margin: 10px 0;
+    padding: 20px 90px 20px 10px;
+    border-radius: 10px;
+    border: 1px solid #DBDAD9;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+
+
+.checkboxtxt {
+    letter-spacing: 1.5px ;
+    font-family: Roboto, sans-serif;
+    font-weight: lighter;
+    color: black;
+    text-align: justify-all;
+}
+
+
+button {
+    font-family: Roboto, sans-serif;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    padding: 20px 0;
+    width: 320px;
+    background:  #013243;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+button a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 20px 80px;
+}
+
+button:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1s;
+    background: #016080;
+}
+
+/** MEDIA QUERIE MD**/
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    body {
+        background-attachment: fixed;
+        padding: 0px;
+        margin: 0px;
+        
+    }
+
+    .main-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 500px;
+    }
+
+    .div-left {
+        margin: 0 auto;
+        border-radius: 10px 10px 0 0;
+        height: 500px;
+        width: 450px;
+    }
+
+    
+    .div-right {
+        border-radius: 0 0 10px 10px;
+        height: 500px;
+        width: 448px;
+        justify-content: center;
+        
+    }
+    
+    .text-left h1 {
+        font-size: 2.1rem;
+        padding: 50px 0 16px 0;
+    }
+
+    .div-right form {
+        width: 320px;
+        padding-left: 50px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    label {
+        padding: 0 0 0 3px;
+    }
+    
+    form h1 {
+        font-size: 2.1rem;
+        padding: 35px 0 0 0;
+
+    }
+    
+    .email {
+        margin: 7px 0;
+        padding: 17px 90px 17px 10px;
+     
+    }
+    
+    
+    .password {
+        padding: 17px 90px 17px 10px;
+    }
+    
+    
+    .checkboxtxt {
+        letter-spacing: 1.5px ;
+        font-family: Roboto, sans-serif;
+        font-weight: lighter;
+        color: black;
+        text-align: justify-all;
+    }
+    
+    
+    button {
+        font-family: Roboto, sans-serif;
+        color: whitesmoke;
+        font-size: 1.2rem;
+        padding: 10px 0;
+        width: 320px;
+        background:  #013243;
+        border: none;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    
+    button a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 20px 80px;
+    }
+    
+}
+
+/* MEDIA QUERIE SM */
+
+@media  (max-width: 600px) {
+
+    .main-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .div-left {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    
+    .div-right {
+        width: 100%;
+        border-radius: 0;
+        
+    }
+    
+    .text-left h1 {
+        font-size: 2.1rem;
+        padding: 85px 0 16px 0;
+    }
+
+    .div-right form {
+        width: 70%;
+        padding: 20px 0 0 80px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    label {
+        padding: 0 0 0 3px;
+    }
+    
+    form h1 {
+        font-size: 2.1rem;
+        padding: 35px 0 0 0;
+
+    }
+    
+    .email {
+        width: 70%;
+        border-radius: 5px;
+     
+    }
+    
+    
+    .password {
+        width: 70%;
+        border-radius: 5px;
+    }
+    
+    
+    .checkboxtxt {
+        letter-spacing: 1.5px ;
+        font-family: Roboto, sans-serif;
+        font-weight: lighter;
+        color: black;
+    }
+    
+    
+    button {
+        font-family: Roboto, sans-serif;
+        color: whitesmoke;
+        font-size: 1.2rem;
+        padding: 15px 0;
+        width: 100%;
+        background:  #013243;
+        border: none;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+    
+    button a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 20px 80px;
+    }
+    
+
+
+
+}
